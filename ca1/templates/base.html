@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lovely Pet Store</title>
+    </head>
+    <body>
+        <nav>
+            <a href="{{url_for('index')}}">
+                <p class='nav'>Home</p>
+            </a>
+            <a href="{{url_for('shopping')}}">
+                <p class="'nav">shopping</p>
+            </a>
+            <a href="{{url_for('login')}}">
+                <p id="login">log in</p>
+            </a>
+        </nav>
+        
+        {% block main_content %}
+        {% endblock %}
+        <footer>
+            <p id="footer">all rights kept.</p>
+        </footer>
+    </body>
+</html>
